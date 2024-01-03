@@ -1,3 +1,5 @@
+/* Start Andy Bell's latest CSS reset */
+
 /* Box sizing rules */
 *,
 *::before,
@@ -15,7 +17,7 @@ html {
 /* Remove default margin in favour of better control in authored CSS */
 body, h1, h2, h3, h4, p,
 figure, blockquote, dl, dd {
-  margin: 0;
+  margin-block-end: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -71,3 +73,108 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+/* End Andy Bell's latest CSS reset */
+
+/* Start styling the Stats Preview Card Component */
+
+body 
+{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 375px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+ 
+
+.wrapper
+{
+    background-color: hsl(231.4,28%,9.8%);    
+    padding: 3rem;
+}
+
+.image-container
+{
+  background-color:  hsl(277, 64%, 61%);  
+}
+
+img 
+{
+  mix-blend-mode: multiply;
+}
+
+h2
+{
+  font-size: 1.6rem;
+  padding: 0 1.5rem;
+}
+
+h2,
+p
+{
+  font-family: 'Inter', sans-serif;
+  /* border: 2px solid yellow; */
+}
+
+.accent 
+{
+  color: hsl(277, 64%, 61%);
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+}
+
+.card-description
+{
+  font-weight: 400;
+  color: rgb(159,158,177);
+  padding: 1rem 1.5rem;
+}
+
+.stats-preview-card-component
+{
+    background-color: hsl(244.4,30.3%,17.5%);
+    color: hsl(0, 0%, 100%);
+    text-align: center; /* this nicely centers the two paragraphs horizontally but doesn't center the list items */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+ul 
+{
+  padding-left: 0; /* make the empty space left by the bulleted points available so that the li's would be horizontally centered */
+}
+
+.stats 
+{
+    border: 2px solid white;
+    padding: 0; /* delete default list padding to help the list respect the text-align: center set for its parent container */
+    margin: 0; /* delete default list margin */
+} 
+
+.stat-items 
+{
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.725rem;
+}
+
+.stat-number
+{
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.stat-title
+{
+ color: rgb(159,158,177);
+ font-weight: 400;
+ letter-spacing: .1rem;
+ margin-bottom: 2rem;
+}
+
+.how-many-companies 
+{
+  text-transform: lowercase;
+}
