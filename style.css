@@ -83,7 +83,7 @@ body
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  max-width: 375px;
+  max-width: 376px;
   min-height: 100vh;
   margin: 0 auto;
 }
