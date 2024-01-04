@@ -116,7 +116,6 @@ img
     text-align: center; /* this nicely centers the two paragraphs horizontally but doesn't center the list items */
     border-radius: 8px;
     overflow: hidden;
-    border: 2px solid yellow;
 }
 
 h2
